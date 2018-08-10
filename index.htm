@@ -12,48 +12,194 @@
   <meta name="keywords" content="revista feira, feira, rio de janeiro, rio,comida">
   <meta name="handheldfriendly" content="true" />
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
   <style>
+  *{
+    box-sizing: border-box;
+  }
     html {
-      font-family: 'Work Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
       background-color: hsl(0, 0%, 95%);
+      background-color: hsl(0, 0%, 100%);
+
     }
-    html,body{
+
+    html,
+    body {
       padding: 0;
       margin: 0;
 
     }
+    p{
+      margin-bottom: 2em;
 
-    h1 {
-      padding-top: 35vh;
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 6em
     }
-    .rodape{
-      position: absolute;
-      bottom: 0;
+    .header{
+
+
+    }
+    input{
+      border: none;
+      background-color: #e6e7e8;
+      padding: .5em 1em;
+      font-size: 1.2em;
+      margin-bottom: 2em;
+      width: 100%;
+    }
+    .headerimg{
+
+      background-image: url('header1.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      min-height: 24em;
+      max-width: 55em;
+      margin: auto;
+      margin-top: 5em
+
+    }
+    .header img{
+      display: block;
+      margin: auto;
+      width: 50%
+    }
+    .center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+    .rodape {
+      display: block;
       text-align: center;
       width: 100%;
       font-family: sans-serif;
-      letter-spacing: 4px;
-      margin-bottom: .5em;
-      font-size: .7em;
+      letter-spacing: 2px;
+      font-size: .8em;
       font-weight: 100;
-      color: gray;
+      color: white;
+      background-color: #91bfc7;
+      padding: 3em;
+      min-height: 14em
+    }
+    .rodape .email {
+    margin-bottom: 1em;
+}
+.rodape .mid{
+  padding: 1em;
+  cursor: pointer;
+}
+    .texto{
+      position: relative;
+      margin: auto;
+      text-align: center;
+    }
+    .centerb{
+      margin: auto;
+      margin-top: 4em;
+      margin-bottom: 5em;
+      position: relative;
+      max-width: 29em;
     }
     ::selection {
       background: #6dc6e8;
     }
+
     ::-moz-selection {
       background: #6dc6e8;
     }
+    .invisivel {
+      text-indent: -9999px;
+      font-size: 0px;
+    }
+    button {
+    min-width: 6em;
+    border: 2px solid #020202;
+    background-color: white;
+    padding: 1.2em;
+    display: block;
+    position: relative;
+    font-family: 'Roboto';
+    font-weight: 700;
+
+     transition: all 0.5s ease;
+}
+.btncontainer *{
+  cursor:pointer;
+  margin: auto;
+  margin-top: 2em;
+}
+.btncontainer:hover button {
+    /* top:-.6em;
+    left:.6em; */
+}
+.btncontainer:hover button::after {
+    top:-0.4em;
+    left:0em;
+}
+section{
+  position: relative;
+}
+
+button::after {
+      content: '';
+    display: block;
+    position: absolute;
+    top: -.9em;
+    left: 0.5em;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #020202;
+    background-color: white;
+    z-index: -1;
+    cursor:pointer;
+}
+label{
+  display: block;
+  margin-bottom: .5em;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  }
   </style>
 </head>
 
 <body>
-  <h1>Revista Feira</h1>
-  <span class='rodape'></span>
+  <section class='header'><div class="headerimg"><div id="over" style="position:absolute; width:100%; height:100%"><img class='logo center' src="logo01.svg"></div></div></section>
+  <h1 class='invisivel'>Revista Feira</h1>
+  <section class="texto">
+    <div class="centerb">
+  <p>A Revista Feira é uma publicação independente sobre comida, os caminhos que ela percorre e as pessoas que se conectam através dela.
+  </p>
+  <p>
+    Nosso foco é o Estado do Rio de Janeiro. Mas nunca se sabe para que outros lugares a comida pode nos levar.
+  </p>
+  <p>
+    A primeira edição da revista, a ser lançada em breve, será exclusivamente digital – publicá-la em versão impressa é um sonho que pretendemos realizar num futuro próximo.
+  </p>
+  <p>
+    Para ser avisado do lançamento do primeiro número e receber outras notícias sobre nossa evolução, cadastre-se abaixo.
+  </p>
+</div>
+</section>
+<section class='mailing'><div class="centerb">
+<label>Nome</label>
+<input type="text">
+<label>E-mail</label>
+<input type="text">
+<div class='btncontainer'>
+<button>QUERO SER AVISADO</button></div>
+
+</div>
+</section>
+  <span class='rodape'>
+    <div class='email'><a href="mailto:contato@revistafeira.com">contato@revistafeira.com</a></div>
+  <a href="#"><img class='mid' src="ig1.svg"></a><a href="#"><img class='mid' src="fb1.svg"></a>
+  </span>
 </body>
 
 </html>
