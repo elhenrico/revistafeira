@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#607D8B">
-  <meta property="og:image" content="https://juntalocal.com/img/index/sobre_img2.jpg" />
+  <meta property="og:image" content="https://revistafeira.com/header1.jpg" />
   <title>Revista Feira</title>
   <meta name="author" content="Revista Feira">
-  <meta name="description" content="Revista Feira. Falando a fundo sobre comida no Rio de Janeiro.">
-  <meta name="keywords" content="revista feira, feira, rio de janeiro, rio,comida">
+  <meta name="description" content="A Revista Feira é uma publicação independente sobre comida, os caminhos que ela percorre e as pessoas que se conectam através dela.">
+  <meta name="keywords" content="revista feira, feira, rio de janeiro,publicação independente, rio,comida">
   <meta name="handheldfriendly" content="true" />
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
@@ -39,6 +39,10 @@
 
 
     }
+    section{
+      padding-left: 1em;
+      padding-right: 1em;
+    }
     input{
       border: none;
       background-color: #e6e7e8;
@@ -56,9 +60,10 @@
       min-height: 24em;
       max-width: 55em;
       margin: auto;
-      margin-top: 5em
+      margin-top: 1em;
 
     }
+
     .header img{
       display: block;
       margin: auto;
@@ -78,8 +83,7 @@
       width: 100%;
       font-family: sans-serif;
       letter-spacing: 2px;
-      font-size: .8em;
-      font-weight: 100;
+      font-size: 1em;
       color: white;
       background-color: #91bfc7;
       padding: 3em;
@@ -89,14 +93,18 @@
     margin-bottom: 1em;
 }
 .rodape .mid{
-  padding: 1em;
+  padding: .5em;
   cursor: pointer;
+  max-width: 4em;
 }
     .texto{
       position: relative;
       margin: auto;
       text-align: center;
     }
+    .texto-med {
+      font-weight: 400;
+                }
     .centerb{
       margin: auto;
       margin-top: 4em;
@@ -124,8 +132,9 @@
     position: relative;
     font-family: 'Roboto';
     font-weight: 700;
+    font-size: 1em;
 
-     transition: all 0.5s ease;
+     transition: all 0.2s ease;
 }
 .btncontainer *{
   cursor:pointer;
@@ -133,12 +142,12 @@
   margin-top: 2em;
 }
 .btncontainer:hover button {
-    /* top:-.6em;
-    left:.6em; */
+    background-color: black;
+    color: white;
 }
 .btncontainer:hover button::after {
-        top: -0.5em;
-    left: 0.2em;
+        /* top: -0.5em;
+    left: 0.2em; */
 }
 section{
   position: relative;
@@ -165,6 +174,14 @@ a {
   text-decoration: none;
   color: inherit;
   }
+@media only screen and (max-width: 480px) {
+
+  .header img{
+    width: 80%;
+  }
+
+
+}
   </style>
 </head>
 
@@ -175,30 +192,31 @@ a {
     <div class="centerb">
   <p>A Revista Feira é uma publicação independente sobre comida, os caminhos que ela percorre e as pessoas que se conectam através dela.
   </p>
-  <p>
+  <p class="texto-med">
     Nosso foco é o Estado do Rio de Janeiro. Mas nunca se sabe para que outros lugares a comida pode nos levar.
   </p>
-  <p>
+  <p class="texto-med">
     A primeira edição da revista, a ser lançada em breve, será exclusivamente digital – publicá-la em versão impressa é um sonho que pretendemos realizar num futuro próximo.
   </p>
-  <p>
+  <p class="texto-med">
     Para ser avisado do lançamento do primeiro número e receber outras notícias sobre nossa evolução, cadastre-se abaixo.
   </p>
 </div>
 </section>
 <section class='mailing'><div class="centerb">
+  <form>
 <label>Nome</label>
 <input type="text">
 <label>E-mail</label>
-<input type="text">
+<input type="email">
 <div class='btncontainer'>
 <button>QUERO SER AVISADO</button></div>
-
+</form>
 </div>
 </section>
   <span class='rodape'>
     <div class='email'><a href="mailto:contato@revistafeira.com">contato@revistafeira.com</a></div>
-  <a href="#"><img class='mid' src="ig1.svg"></a><a href="#"><img class='mid' src="fb1.svg"></a>
+<a href="https://www.facebook.com/revistafeira/"><img class='mid' src="fb1.svg"></a>  <a href="https://www.instagram.com/revistafeira/"><img class='mid' src="ig1.svg"></a>
   </span>
 </body>
 
