@@ -170,7 +170,6 @@ color: inherit;
 }
 .equipe p a:hover{
   border-bottom: 2px solid black;
-
 }
 section.header li{
 display: inline-block;
@@ -243,6 +242,29 @@ display: block;
 margin: auto;
 font-size: 2em;
 color:white;
+}
+.equipe-card{
+  text-align: left;
+  margin-bottom: 3em;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+.equipe-card img {
+    border-radius: 50%;
+    margin-right: 2em;
+    max-width: 12em;
+    grid-row: 1 / span 2;
+}
+.equipe-card .nome { display: block;}
+.equipe-card .bio {
+   font-size: .9em;
+   font-weight: normal;
+   margin-top: 1em;
+   display: block;
+}
+.equipe .centerb {
+    max-width: 37em;
 }
 @media only screen and (max-width: 480px) {
 .header img{
