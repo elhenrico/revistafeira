@@ -175,6 +175,13 @@ color: inherit;
 section.header li{
 display: inline-block;
 }
+section.header li a.active {
+border-bottom: 2px solid  #91bfc7;
+}
+section.header li a:hover{
+border-bottom: 2px solid black;
+}
+
 section.header li:not(:last-child){
 margin-right: 4em;
 }
