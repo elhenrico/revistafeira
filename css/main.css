@@ -176,7 +176,7 @@ section.header li{
 display: inline-block;
 }
 section.header li:not(:last-child){
-margin-right: 2em;
+margin-right: 4em;
 }
 
 section.header ul{
