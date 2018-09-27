@@ -11,239 +11,10 @@
   <meta name="description" content="A Revista Feira é uma publicação independente sobre comida, os caminhos que ela percorre e as pessoas que se conectam através dela.">
   <meta name="keywords" content="revista feira, feira, rio de janeiro,publicação independente, rio,comida">
   <meta name="handheldfriendly" content="true" />
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
+  <link href="./css/main.css" rel="stylesheet">
   <style>
-  *{
-    box-sizing: border-box;
-  }
-    html {
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      background-color: hsl(0, 0%, 95%);
-      background-color: hsl(0, 0%, 100%);
-
-    }
-
-    html,
-    body {
-      padding: 0;
-      margin: 0;
-
-    }
-    p{
-      margin-bottom: 2em;
-
-    }
-    .header{
-
-
-    }
-    section{
-      padding-left: 1em;
-      padding-right: 1em;
-    }
-    input{
-      border: none;
-      background-color: #e6e7e8;
-      padding: .5em 1em;
-      font-size: 1.2em;
-      margin-bottom: 2em;
-      width: 100%;
-    }
-    .headerimg{
-
-      background-image: url('./img/header1.jpg');
-      background-size: cover;
-      background-position: center;
-      position: relative;
-      min-height: 24em;
-      max-width: 55em;
-      margin: auto;
-      margin-top: 1em;
-
-    }
-
-    .header img{
-      display: block;
-      margin: auto;
-      width: 50%
-    }
-    .center {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-    .rodape {
-      display: block;
-      text-align: center;
-      width: 100%;
-      font-family: sans-serif;
-      letter-spacing: 2px;
-      font-size: 1em;
-      color: white;
-      background-color: #91bfc7;
-      padding: 3em;
-      min-height: 14em
-    }
-    .rodape .email {
-    margin-bottom: 1em;
-}
-.rodape .mid{
-  padding: 0.1em;
-  cursor: pointer;
-  max-width: 3em;
-}
-    .texto{
-      position: relative;
-      margin: auto;
-      text-align: center;
-    }
-    .texto-med {
-      font-weight: 400;
-                }
-    .centerb{
-      margin: auto;
-      margin-top: 4em;
-      margin-bottom: 5em;
-      position: relative;
-      max-width: 29em;
-    }
-    ::selection {
-      background: #6dc6e8;
-    }
-
-    ::-moz-selection {
-      background: #6dc6e8;
-    }
-    .invisivel {
-      text-indent: -9999px;
-      font-size: 0px;
-    }
-    button {
-    min-width: 6em;
-    border: 2px solid #020202;
-    background-color: white;
-    padding: 1.2em;
-    display: block;
-    position: relative;
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 1em;
-
-     transition: all 0.2s ease;
-}
-.btncontainer *{
-  cursor:pointer;
-  margin: auto;
-  margin-top: 2em;
-}
-.btncontainer:hover button {
-    background-color: black;
-    color: white;
-}
-.btncontainer:hover button::after {
-        /* top: -0.5em;
-    left: 0.2em; */
-}
-section{
-  position: relative;
-}
-
-button::after {
-      content: '';
-    display: block;
-    position: absolute;
-    top: -.9em;
-    left: 0.5em;
-    width: 100%;
-    height: 100%;
-    border: 2px solid #020202;
-    background-color: white;
-    z-index: -1;
-    cursor:pointer;
-}
-label{
-  display: block;
-  margin-bottom: .5em;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-  }
-section.header li{
-  display: inline-block;
-}
-section.header li:not(:last-child){
-  margin-right: 2em;
-}
-
-section.header ul{
-  padding: 0;
-  list-style: none;
-
-align-items: center;
-padding: 0 1em;
-border-radius: 5px;
-margin: auto;
-}
-section.header .menu{
-  display: flex;
-  margin-top: 1em;
-}
-.edicao_revista{
-  width: 40em;
-overflow: hidden;
-height: 25em;
-max-height: 25em;
-background-image: url('./img/ed001_feed.jpg');
-background-size: cover;
-background-position: center;
-margin: auto;
-}
-.edicao_revista:hover a{
-  opacity: 1;
-}
-.edicao_revista:hover div{
-  opacity: 0;
-
-}
-.edicao_revista div{
-  opacity: 1;
-display: block;
-transition: opacity .2s ease;
-margin-top: 18.7em;
-text-align: left;
-margin-left: 3.3em;
-border: 2px solid black;
-display: block;
-width: max-content;
-padding: 1em;
-position: absolute;
-}
-.edicao_revista a{
-  background-color: rgba(0, 0, 0, 0.29);
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  transition: opacity .2s ease;
-  padding-top: 10em;
-}
-.edicao_revista a span{
-  display: block;
-  margin: auto;
-  font-size: 2em;
-  color:white;
-}
-@media only screen and (max-width: 480px) {
-  .header img{
-    width: 80%;
-  }
-}
   </style>
 </head>
 
@@ -251,19 +22,24 @@ position: absolute;
   <section class='header'>
     <div class='menu'>
       <ul>
-      <li><a href="#">PÁGINA INICIAL</a></li>
-      <li><a href="#">SOBRE</a></li>
-      <li><a href="#">EQUIPE</a></li>
-      <li><a href="#">CONTATO</a></li>
-  </ul></div>
+        <li><a href="/">PÁGINA INICIAL</a></li>
+        <li><a href="/sobre">SOBRE</a></li>
+        <li><a href="/equipe">EQUIPE</a></li>
+        <li><a href="/contato">CONTATO</a></li>
+      </ul>
+    </div>
 
-    <div class="headerimg"><div id="over" style="position:absolute; width:100%; height:100%"><img class='logo center' src="./img/logo01.svg"></div></div></section>
+    <div class="headerimg">
+      <div id="over" style="position:absolute; width:100%; height:100%"><img class='logo center' src="./img/logo01.svg"></div>
+    </div>
+  </section>
   <h1 class='invisivel'>Revista Feira</h1>
   <section class="texto">
     <p class="texto-med" style='margin-top:2em;'>Convidamos você a ler a edição # 1 da Revista Feira.</p>
-    <div class='edicao_revista'><div>Leia aqui</div><a href=""><span class=''>LER AGORA</span></a></div>
+    <div class='edicao_revista'>
+      <div>Leia aqui</div><a href=""><span class=''>LER AGORA</span></a></div>
     <div data-configid="34419255/64681347" style="width:40em; height:25em;margin:auto;" class="issuuembed"></div>
-<script type="text/javascript" src="https://e.issuu.com/embed.js" async="true"></script>
+    <script type="text/javascript" src="https://e.issuu.com/embed.js" async="true"></script>
     <!-- <div class="centerb">
   <p>A Revista Feira é uma publicação independente sobre comida, os caminhos que ela percorre e as pessoas que se conectam através dela.
   </p>
@@ -273,23 +49,24 @@ position: absolute;
   <p class="texto-med">
     A primeira edição da revista será lançada em breve em formato digital. Em seguida, iniciaremos uma campanha a fim de arrecadar recursos que viabilizem sua publicação também em versão impressa.
   </p> -->
-  <p class="texto-med" style='margin-top:5em;'>
-    Para receber outras informações sobre a Revista Feira e acompanhar nossa evolução, cadastre-se abaixo.
-  </p>
-</div>
-</section>
-<section class='mailing'><div class="centerb">
-  <form action="https://revistafeira.us19.list-manage.com/subscribe/post?u=67a1bfaadf6eb49c5a38552b9&amp;id=e0bd628027" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-<label for="mce-FNAME">Nome</label>
-<input type="text" name="FNAME" class="" id="mce-FNAME">
-<label for="mce-EMAIL">E-mail</label>
-<input type="email" name="EMAIL" class="required email" id="mce-EMAIL">
- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_67a1bfaadf6eb49c5a38552b9_e0bd628027" tabindex="-1" value=""></div>
-<div class='btncontainer'>
-<button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">QUERO ME CADASTRAR</button></div>
-</form>
-</div>
-</section>
+    <p class="texto-med" style='margin-top:5em;'>
+      Para receber outras informações sobre a Revista Feira e acompanhar nossa evolução, cadastre-se abaixo.
+    </p>
+    </div>
+  </section>
+  <section class='mailing'>
+    <div class="centerb">
+      <form action="https://revistafeira.us19.list-manage.com/subscribe/post?u=67a1bfaadf6eb49c5a38552b9&amp;id=e0bd628027" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <label for="mce-FNAME">Nome</label>
+        <input type="text" name="FNAME" class="" id="mce-FNAME">
+        <label for="mce-EMAIL">E-mail</label>
+        <input type="email" name="EMAIL" class="required email" id="mce-EMAIL">
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_67a1bfaadf6eb49c5a38552b9_e0bd628027" tabindex="-1" value=""></div>
+        <div class='btncontainer'>
+          <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">QUERO ME CADASTRAR</button></div>
+      </form>
+    </div>
+  </section>
   <span class='rodape'>
     <div class='email'><a href="mailto:contato@revistafeira.com">contato@revistafeira.com</a></div>
 <a href="https://www.facebook.com/somosrevistafeira"><img class='mid' src="./img/fb1.svg"></a>  <a href="https://www.instagram.com/revistafeira/"><img class='mid' src="./img/ig1.svg"></a>
