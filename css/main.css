@@ -248,7 +248,7 @@ color:white;
   margin-bottom: 3em;
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 10px;
+  /* grid-gap: 10px; */
 }
 .equipe-card img {
     border-radius: 50%;
@@ -256,11 +256,14 @@ color:white;
     max-width: 12em;
     grid-row: 1 / span 2;
 }
-.equipe-card .nome { display: block;}
+.equipe-card .nome {
+  margin-top: 1em;
+  display: block;
+}
 .equipe-card .bio {
    font-size: .9em;
    font-weight: normal;
-   margin-top: 1em;
+   /* margin-top: 1em; */
    display: block;
 }
 .equipe .centerb {
