@@ -204,16 +204,40 @@ background-size: cover;
 background-position: center;
 margin: auto;
 }
-.edicao_revista:hover div{
+.edicao_revista:hover a{
   opacity: 1;
 }
+.edicao_revista:hover div{
+  opacity: 0;
+
+}
 .edicao_revista div{
+  opacity: 1;
+display: block;
+transition: opacity .2s ease;
+margin-top: 18.7em;
+text-align: left;
+margin-left: 3.3em;
+border: 2px solid black;
+display: block;
+width: max-content;
+padding: 1em;
+position: absolute;
+}
+.edicao_revista a{
   background-color: rgba(0, 0, 0, 0.29);
   opacity: 0;
   width: 100%;
   height: 100%;
+  display: block;
   transition: opacity .2s ease;
-
+  padding-top: 10em;
+}
+.edicao_revista a span{
+  display: block;
+  margin: auto;
+  font-size: 2em;
+  color:white;
 }
 @media only screen and (max-width: 480px) {
   .header img{
@@ -236,8 +260,11 @@ margin: auto;
     <div class="headerimg"><div id="over" style="position:absolute; width:100%; height:100%"><img class='logo center' src="./img/logo01.svg"></div></div></section>
   <h1 class='invisivel'>Revista Feira</h1>
   <section class="texto">
-    <div class='edicao_revista'><div><a href="">LER AGORA</a></div></div>
-    <div class="centerb">
+    <p class="texto-med" style='margin-top:2em;'>Convidamos você a ler a edição # 1 da Revista Feira.</p>
+    <div class='edicao_revista'><div>Leia aqui</div><a href=""><span class=''>LER AGORA</span></a></div>
+    <div data-configid="34419255/64681347" style="width:40em; height:25em;margin:auto;" class="issuuembed"></div>
+<script type="text/javascript" src="https://e.issuu.com/embed.js" async="true"></script>
+    <!-- <div class="centerb">
   <p>A Revista Feira é uma publicação independente sobre comida, os caminhos que ela percorre e as pessoas que se conectam através dela.
   </p>
   <p class="texto-med">
@@ -245,9 +272,9 @@ margin: auto;
   </p>
   <p class="texto-med">
     A primeira edição da revista será lançada em breve em formato digital. Em seguida, iniciaremos uma campanha a fim de arrecadar recursos que viabilizem sua publicação também em versão impressa.
-  </p>
-  <p class="texto-med">
-    Para ser avisado do lançamento do primeiro número e receber outras notícias sobre nossa evolução, cadastre-se abaixo.
+  </p> -->
+  <p class="texto-med" style='margin-top:5em;'>
+    Para receber outras informações sobre a Revista Feira e acompanhar nossa evolução, cadastre-se abaixo.
   </p>
 </div>
 </section>
@@ -259,7 +286,7 @@ margin: auto;
 <input type="email" name="EMAIL" class="required email" id="mce-EMAIL">
  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_67a1bfaadf6eb49c5a38552b9_e0bd628027" tabindex="-1" value=""></div>
 <div class='btncontainer'>
-<button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">QUERO SER AVISADO</button></div>
+<button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">QUERO ME CADASTRAR</button></div>
 </form>
 </div>
 </section>
