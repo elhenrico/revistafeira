@@ -1,65 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="equipe">
+<html lang="pt-br" class="index">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#607D8B">
   <meta property="og:image" content="https://revistafeira.com/img/header1.jpg" />
-  <title>Equipe - Revista Feira</title>
+  <title>Revista Feira</title>
   <meta name="author" content="Revista Feira">
-  <meta name="description" content="A Revista Feira é uma publicação independente sobre comida, os caminhos que ela percorre e as pessoas que se conectam através dela.">
+  <meta name="description"
+    content="A Revista Feira é uma publicação independente sobre comida, os caminhos que ela percorre e as pessoas que se conectam através dela.">
   <meta name="keywords" content="revista feira, feira, rio de janeiro,publicação independente, rio,comida">
   <meta name="handheldfriendly" content="true" />
   <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
-  <link href="./css/main.css" rel="stylesheet">
-  <style>
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+  <link href="./static/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./static/css/main.css" rel="stylesheet">
 </head>
 
 <body>
-  <section class='header'>
-    <div class='menu'>
-      <ul>
-        <li><a href="/">PÁGINA INICIAL</a></li>
-        <li><a href="/sobre">SOBRE</a></li>
-        <li><a href="/equipe" class='active'>EQUIPE</a></li>
-        <li><a href="/contato">CONTATO</a></li>
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand mr-auto my-3" href="http://www.revistafeira.com"><img src="./static/img/logo01.svg"
+            width="180" height="50" alt="Revista Feira"></a>
+        <ul class="navbar-nav mt-2 mt-lg-0 text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Página Inicial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/equipe">Equipe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contato">Contato</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
+  <section class="d-flex flex-column align-items-center text-dark bg-light texto">
+    <h1 class="text-uppercase" style='text-align:center; margin-top:2em;'>Equipe</h1>
 
-  </section>
-  <h1 class='' style='text-align:center; margin-top:2em;'>EQUIPE</h1>
-  <section class="texto">
-
-    <div class="centerb" style='margin-top:4em;'>
-      <div class='equipe-card'><img src='./img/minibio_constance.jpg'><span class='nome'>Constance Escobar</span>
-        <span class='bio'>Autora do blog <em>Para Quem Quer Me Visitar</em>, a carioca Constance Escobar estudou gastronomia na Universidade Federal do Estado do Rio de Janeiro. Ao longo da última década, tem atuado como colaboradora de diversos veículos, assinando artigos sobre turismo e gastronomia.</span>
+    <div class="centerb d-flex flex-wrap" style='margin-top:4em;'>
+      <div class='equipe-card'><img src='./static/img/minibio_constance.jpg'><span class='nome'>Constance Escobar</span>
+        <span class='bio'>Autora do blog <em>Para Quem Quer Me Visitar</em>, a carioca Constance Escobar estudou
+          gastronomia na Universidade Federal do Estado do Rio de Janeiro. Ao longo da última década, tem atuado como
+          colaboradora de diversos veículos, assinando artigos sobre turismo e gastronomia.</span>
       </div>
 
-      <div class='equipe-card'><img src='./img/minibio_maria.jpg'><span class='nome'>Maria Fontenelle</span>
-        <span class='bio'>É designer gráfico, atualmente cursando mestrado em tipografia na University of Reading, Inglaterra. No Rio de Janeiro, desenvolveu a identidade visual de diversos produtores locais, feiras, bares e restaurantes.</span>
+      <div class='equipe-card'><img src='./static/img/minibio_maria.jpg'><span class='nome'>Maria Fontenelle</span>
+        <span class='bio'>É designer gráfico, atualmente cursando mestrado em tipografia na University of Reading,
+          Inglaterra. No Rio de Janeiro, desenvolveu a identidade visual de diversos produtores locais, feiras, bares e
+          restaurantes.</span>
       </div>
 
-      <div class='equipe-card'><img src='./img/minibio_samuel.jpg'><span class='nome'>Samuel Antonini</span>
-        <span class='bio'>Paulista, radicado no Rio de Janeiro, fotógrafo “da cozinha”. Acredita no enorme potencial da narrativa fotográfica como ferramenta de transformação e na comida como expressão maior de identidade social. Através dos seus trabalhos busca constantemente registrar a inseparável interação entre homem e alimento.</span>
+      <div class='equipe-card'><img src='./static/img/minibio_samuel.jpg'><span class='nome'>Samuel Antonini</span>
+        <span class='bio'>Paulista, radicado no Rio de Janeiro, fotógrafo “da cozinha”. Acredita no enorme potencial da
+          narrativa fotográfica como ferramenta de transformação e na comida como expressão maior de identidade social.
+          Através dos seus trabalhos busca constantemente registrar a inseparável interação entre homem e
+          alimento.</span>
       </div>
 
 
-      <div class='equipe-card'><img src='./img/minibio_thiago.jpg'><span class='nome'>Thiago Nasser</span>
-        <span class='bio'>É um dos fundadores da Junta Local, uma plataforma de aproximação entre pequenos produtores e consumidores no Rio de Janeiro. Com doutorado em Ciência Política pelo Instituto de Estudos Sociais e Políticos do Universidade do Estado do Rio de Janeiro, pesquisa a interface entre comida e política. </span>
+      <div class='equipe-card'><img src='./static/img/minibio_thiago.jpg'><span class='nome'>Thiago Nasser</span>
+        <span class='bio'>É um dos fundadores da Junta Local, uma plataforma de aproximação entre pequenos produtores e
+          consumidores no Rio de Janeiro. Com doutorado em Ciência Política pelo Instituto de Estudos Sociais e
+          Políticos do Universidade do Estado do Rio de Janeiro, pesquisa a interface entre comida e política. </span>
       </div>
 
 
     </div>
   </section>
 
-  <span class='rodape'>
-    <div class='email'><a href="mailto:contato@revistafeira.com">contato@revistafeira.com</a></div>
-<a href="https://www.facebook.com/somosrevistafeira"><img class='mid' src="./img/fb1.svg"></a>  <a href="https://www.instagram.com/revistafeira/"><img class='mid' src="./img/ig1.svg"></a>
-  </span>
+  <footer class="d-flex flex-column align-items-center bg-dark text-light mt-4 p-5">
+    <p>contato@revistafeira.com</p>
+    <div>
+      <a href="http://www.instagram.com/revistafeira"><i class="fab fa-instagram fa-2x mx-2"></i></a>
+      <a href="http://www.facebook.com/somosrevistafeira"><i class="fab fa-facebook-f fa-2x mx-2"></i></a>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

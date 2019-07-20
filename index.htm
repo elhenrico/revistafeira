@@ -8,64 +8,106 @@
   <meta property="og:image" content="https://revistafeira.com/img/header1.jpg" />
   <title>Revista Feira</title>
   <meta name="author" content="Revista Feira">
-  <meta name="description" content="A Revista Feira é uma publicação independente sobre comida, os caminhos que ela percorre e as pessoas que se conectam através dela.">
+  <meta name="description"
+    content="A Revista Feira é uma publicação independente sobre comida, os caminhos que ela percorre e as pessoas que se conectam através dela.">
   <meta name="keywords" content="revista feira, feira, rio de janeiro,publicação independente, rio,comida">
   <meta name="handheldfriendly" content="true" />
   <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
-  <link href="./css/main.css" rel="stylesheet">
-  <style>
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+  <link href="./static/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./static/css/main.css" rel="stylesheet">
 </head>
 
 <body>
-  <section class='header'>
-    <div class='menu'>
-      <ul>
-        <li><a href="/">PÁGINA INICIAL</a></li>
-        <li><a href="/sobre">SOBRE</a></li>
-        <li><a href="/equipe">EQUIPE</a></li>
-        <li><a href="/contato">CONTATO</a></li>
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand mr-auto my-3" href="http://www.revistafeira.com"><img src="./static/img/logo01.svg"
+            width="180" height="50" alt="Revista Feira"></a>
+        <ul class="navbar-nav mt-2 mt-lg-0 text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Página Inicial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/equipe">Equipe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contato">Contato</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <div class="headerimg">
-      <div id="over" style="position:absolute; width:100%; height:100%"><img class='logo center' src="./img/logo01.svg"></div>
+  <section class="d-flex align-items-center text-dark bg-light">
+    <div class="container text-center my-4">
+      <h1><span class="text-uppercase">Feira</span>
+        é uma publicação independente sobre comida, os caminhos que ela percorre e
+        as pessoas que se contectam através dela </h1>
+      <button class="btn btn-lg btn-dark mt-4 text-uppercase">Sobre a revista</button>
     </div>
   </section>
-  <h1 class='invisivel'>Revista Feira</h1>
-  <section class="texto">
-    <p class="texto-med" style='margin-top:2em;'>Convidamos você a ler a edição # 1 da Revista Feira.</p>
-    
-    <div class="edicao_revista">
-      <div class="edicao_ler"><a href="/edicoes/feira_01.pdf" target="_blank">LER</a></div>
-    </div>
 
-    <!-- <div data-configid="34419255/64681347" style="width:100%;max-width:40em; height:25em;margin:auto;" class="issuuembed"></div>
-    <script type="text/javascript" src="https://e.issuu.com/embed.js" async="true"></script> -->
+  <section class="d-flex flex-column align-items-center justify-content-center bg-feira1 m-3">
+    <h1 class="text-dark bg-light p-2">01 | Peixe</h1>
+    <button class="btn btn-light my-3 text-uppercase">Ver Mais</button>
 
-    <p class="texto-med" style='margin-top:5em;'>
-      Para receber outras informações sobre a Revista Feira e acompanhar nossa evolução, cadastre-se abaixo.
-    </p>
-    </div>
   </section>
-  <section class='mailing'>
-    <div class="centerb">
-      <form action="https://revistafeira.us19.list-manage.com/subscribe/post?u=67a1bfaadf6eb49c5a38552b9&amp;id=e0bd628027" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+  <section class="d-flex flex-column align-items-center justify-content-center bg-feira2 m-3">
+    <h1 class="text-dark bg-light p-2">02 | Confeitaria</h1>
+    <button class="btn btn-light my-3 text-uppercase">Ver Mais</button>
+
+  </section>
+
+  <section class="mailing">
+    <div class="container mt-5">
+      <h2 class="text-center"> Para receber outras informações sobre a Revista Feira e acompanhar nossa evolução,
+        cadastre-se abaixo. </h2>
+      <form
+        action="https://revistafeira.us19.list-manage.com/subscribe/post?u=67a1bfaadf6eb49c5a38552b9&amp;id=e0bd628027"
+        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mt-5"
+        target="_blank" novalidate>
         <label for="mce-FNAME">Nome</label>
         <input type="text" name="FNAME" class="" id="mce-FNAME">
         <label for="mce-EMAIL">E-mail</label>
         <input type="email" name="EMAIL" class="required email" id="mce-EMAIL">
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_67a1bfaadf6eb49c5a38552b9_e0bd628027" tabindex="-1" value=""></div>
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+            name="b_67a1bfaadf6eb49c5a38552b9_e0bd628027" tabindex="-1" value=""></div>
         <div class='btncontainer'>
-          <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">QUERO ME CADASTRAR</button></div>
+          <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+            class="btn btn-dark text-uppercase">Quero me cadastrar</button>
+        </div>
       </form>
     </div>
   </section>
-  <span class='rodape'>
-    <div class='email'><a href="mailto:contato@revistafeira.com">contato@revistafeira.com</a></div>
-<a href="https://www.facebook.com/somosrevistafeira"><img class='mid' src="./img/fb1.svg"></a>  <a href="https://www.instagram.com/revistafeira/"><img class='mid' src="./img/ig1.svg"></a>
-  </span>
+
+  <footer class="d-flex flex-column align-items-center bg-dark text-light mt-4 p-5">
+    <p>contato@revistafeira.com</p>
+    <div>
+      <a href="http://www.instagram.com/revistafeira"><i class="fab fa-instagram fa-2x mx-2"></i></a>
+      <a href="http://www.facebook.com/somosrevistafeira"><i class="fab fa-facebook-f fa-2x mx-2"></i></a>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
