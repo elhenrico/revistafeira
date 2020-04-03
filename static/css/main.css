@@ -25,18 +25,18 @@ section {
 }
 
 .bg-feira1 {
-    background-size: cover;
-    background: url(../img/fundo_1ed.jpg) center;
+    background-size: cover !important;
+    background: url(../img/fundo_1ed.jpg) no-repeat center;
 }
 
 .bg-feira2 {
-    background-size: cover;
-    background: url(../img/fundo_2ed.jpg) center;
+    background-size: cover !important;
+    background: url(../img/fundo_2ed.jpg) no-repeat center;
 }
 
 .bg-feira3 {
-    background-size: cover;
-    background: url(../img/fundo_3ed.jpg) center;
+    background-size: cover !important;
+    background: url(../img/fundo_3ed.jpg) no-repeat center;
 }
 
 .sobre a,
