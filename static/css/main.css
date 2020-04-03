@@ -1,208 +1,211 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 input {
-  border: none;
-  background-color: #e6e7e8;
-  padding: .5em 1em;
-  font-size: 1.2em;
-  margin-bottom: 2em;
-  width: 100%;
+    border: none;
+    background-color: #e6e7e8;
+    padding: .5em 1em;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+    width: 100%;
 }
 
 section {
-  min-height: 50vh;
+    min-height: 50vh;
 }
 
 .revista__mockup {
-  max-width: 600px;
+    max-width: 600px;
 }
 
 .bg-feira1 {
-  background: url(../img/fundo_1ed.jpg);
-  background-size: cover;
-  background-position: center;
+    background-size: cover;
+    background: url(../img/fundo_1ed.jpg) center;
 }
 
 .bg-feira2 {
-  background: url(../img/fundo_2ed.jpg);
-  background-size: cover;
-  background-position: center;
+    background-size: cover;
+    background: url(../img/fundo_2ed.jpg) center;
+}
+
+.bg-feira3 {
+    background-size: cover;
+    background: url(../img/fundo_3ed.jpg) center;
 }
 
 .sobre a,
 .sobre a:hover {
-  color: black;
-  border-bottom: 4px solid #91bfc7;
-  text-decoration: none;
+    color: black;
+    border-bottom: 4px solid #91bfc7;
+    text-decoration: none;
 }
 
 
 footer a {
-  color: white !important;
-  text-decoration: none;
+    color: white !important;
+    text-decoration: none;
 }
 
 /* css antigo */
 
 .header img {
-  display: block;
-  margin: auto;
-  width: 50%
+    display: block;
+    margin: auto;
+    width: 50%
 }
 
 .center {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .rodape {
-  display: block;
-  text-align: center;
-  width: 100%;
-  font-family: sans-serif;
-  letter-spacing: 2px;
-  font-size: 1em;
-  color: white;
-  background-color: #91bfc7;
-  padding: 3em;
-  min-height: 14em
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-size: 1em;
+    color: white;
+    background-color: #91bfc7;
+    padding: 3em;
+    min-height: 14em
 }
 
 .rodape .email {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .rodape .mid {
-  padding: 0.1em;
-  cursor: pointer;
-  max-width: 3em;
-  opacity: 1;
+    padding: 0.1em;
+    cursor: pointer;
+    max-width: 3em;
+    opacity: 1;
 }
 
 .rodape .mid:hover {
-  opacity: .8;
+    opacity: .8;
 }
 
 .texto {
-  position: relative;
-  margin: auto;
-  text-align: center;
+    position: relative;
+    margin: auto;
+    text-align: center;
 }
 
 .texto-med {
-  font-weight: 400;
+    font-weight: 400;
 }
 
 .centerb {
-  margin: auto;
-  margin-top: 4em;
-  margin-bottom: 5em;
-  position: relative;
-  max-width: 29em;
+    margin: auto;
+    margin-top: 4em;
+    margin-bottom: 5em;
+    position: relative;
+    max-width: 29em;
 }
 
 ::selection {
-  background: #6dc6e8;
+    background: #6dc6e8;
 }
 
 ::-moz-selection {
-  background: #6dc6e8;
+    background: #6dc6e8;
 }
 
 .invisivel {
-  text-indent: -9999px;
-  font-size: 0px;
+    text-indent: -9999px;
+    font-size: 0px;
 }
 
 
 label {
-  display: block;
-  margin-bottom: .5em;
+    display: block;
+    margin-bottom: .5em;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 .equipe p a {
-  border-bottom: 4px solid #91bfc7;
+    border-bottom: 4px solid #91bfc7;
 }
 
 .equipe p a:hover {
-  border-bottom: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .edicao_revista {
-  width: 100%;
-  max-width: 40em;
-  overflow: hidden;
-  height: 25em;
-  max-height: 25em;
-  background-image: url('../img/ed001_feed.jpg');
-  background-size: cover;
-  background-position: center;
-  margin: auto;
-  display: flex;
-  align-items: flex-end;
+    width: 100%;
+    max-width: 40em;
+    overflow: hidden;
+    height: 25em;
+    max-height: 25em;
+    background-image: url('../img/ed001_feed.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
 }
 
 .edicao_ler {
-  margin: 1em;
-  padding: 0.75em 1em;
-  border: 2px solid black;
-  transition: .2s ease;
+    margin: 1em;
+    padding: 0.75em 1em;
+    border: 2px solid black;
+    transition: .2s ease;
 }
 
 .edicao_ler:hover {
-  background: black;
-  color: white;
+    background: black;
+    color: white;
 }
 
 .equipe-card {
-  text-align: left;
-  margin-bottom: 3em;
-  display: grid;
-  grid-template-columns: auto auto;
-  /* grid-gap: 10px; */
+    text-align: left;
+    margin-bottom: 3em;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* grid-gap: 10px; */
 }
 
 .equipe-card img {
-  border-radius: 50%;
-  margin-right: 2em;
-  max-width: 12em;
-  grid-row: 1 / span 2;
+    border-radius: 50%;
+    margin-right: 2em;
+    max-width: 12em;
+    grid-row: 1 / span 2;
 }
 
 .equipe-card .nome {
-  margin-top: 1em;
-  display: block;
+    margin-top: 1em;
+    display: block;
 }
 
 .equipe-card .bio {
-  font-size: .9em;
-  font-weight: normal;
-  /* margin-top: 1em; */
-  display: block;
+    font-size: .9em;
+    font-weight: normal;
+    /* margin-top: 1em; */
+    display: block;
 }
 
 .equipe .centerb {
-  max-width: 37em;
+    max-width: 37em;
 }
 
 @media only screen and (max-width: 480px) {
-  .header img {
-    width: 80%;
-  }
+    .header img {
+        width: 80%;
+    }
 }
